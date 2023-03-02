@@ -14,9 +14,10 @@ import java.util.Scanner;
 public class PrimeiroProjeto {
     public static void main(String[] args){
         
+        //Scanner usado na leitura de entrada de varias fontes, usado para ler uma string.
         Scanner ler = new Scanner(System.in);
         
-        int altura, base, area;
+        int altura, base, area, areaMetros;
         
         System.out.print("Informe a altura do triângulo em cm: ");
         altura = ler.nextInt();
@@ -24,8 +25,11 @@ public class PrimeiroProjeto {
         System.out.print("Informe a base do triângulo em cm: ");
         base = ler.nextInt();
         
-        area = base * altura /2;
+        area = ((base * altura) /2);
         
-        System.out.println("A área do triângulho é" + area + "centímetros");
+        areaMetros = (area / 100);
+        
+        System.out.println("A área do triângulo é " + area + "centímetros");
+        System.out.println("A área do triângulo é " + areaMetros + " metros'");
     }
 }
