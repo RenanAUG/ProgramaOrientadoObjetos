@@ -12,24 +12,17 @@ import java.util.Scanner;
  */
 
 public class PrimeiroProjeto {
-    public static void main(String[] args){
-        
-        //Scanner usado na leitura de entrada de varias fontes, usado para ler uma string.
-        Scanner ler = new Scanner(System.in);
-        
-        int altura, base, area, areaMetros;
-        
-        System.out.print("Informe a altura do triângulo em cm: ");
-        altura = ler.nextInt();
-        
-        System.out.print("Informe a base do triângulo em cm: ");
-        base = ler.nextInt();
-        
-        area = ((base * altura) /2);
-        
-        areaMetros = (area / 100);
-        
-        System.out.println("A área do triângulo é " + area + "centímetros");
-        System.out.println("A área do triângulo é " + areaMetros + " metros'");
-    }
+   public static void main(String[] args){
+       
+       Scanner a = new Scanner(System.in);
+       
+       System.out.println("Informe um número: ");
+       double valor = a.nextDouble();
+       
+       if(valor> 20){
+           System.out.println("Hello World!");
+       } else {
+           System.out.println("Hello Unipar!");
+       }
+   }
 }
