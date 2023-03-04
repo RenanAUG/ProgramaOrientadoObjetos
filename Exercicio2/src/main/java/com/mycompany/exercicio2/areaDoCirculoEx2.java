@@ -24,9 +24,15 @@ public class areaDoCirculoEx2 {
 //    Double areaTotal = (raio * raio * pi);
 
     Double areaTotal = (22*raio*raio)/7;
-        
-    System.out.println("A área total do circulo em cm é: " + areaTotal);
+            
+    System.out.println("A área total do circulo em cm é: "+ areaTotal);
     System.out.println("A área total do circulo em metros é: " + (areaTotal/100));
+    System.out.printf("%.2f", areaTotal);
+    
+    System.out.println("\n");
+    
+    System.out.print("A área do meu circulo é: ");
+    System.out.printf("%04f", areaTotal);
     
     }
 }

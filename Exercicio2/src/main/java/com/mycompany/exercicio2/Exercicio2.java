@@ -18,13 +18,28 @@ public class Exercicio2 {
         Scanner ler = new Scanner(System.in);
         
         System.out.println("Informe um número: ");
-        Double numero1 = ler.nextDouble();
+        int numero1 = ler.nextInt();
         
         System.out.println("Informe um segundo número: ");
-        Double numero2 = ler.nextDouble();
+        int numero2 = ler.nextInt();
         
-        Double total = (numero1 + numero2);
+//        Double total = (numero1 + numero2);
         
-        System.out.println("A soma total dos números é: " + total);
+//        System.out.println("A soma total dos números é: " + total);
+
+        System.out.println("Informe até onde o for vai: ");
+        int b = ler.nextInt();
+
+        for (int a = 0; a < b; a++) {
+            System.out.printf("Informe o %2dº, valor:", (a+1),b);
+            System.out.println(a);
+        }
+
+        System.out.println("\nResultados:\n");
+        System.out.printf("%d + %d = %3d\n", numero1, numero2, (numero1 + numero2));
+        System.out.printf("%d - %d = %3d\n", numero1, numero2, (numero1 - numero2));
+        System.out.printf("%d * %d = %3d\n", numero1, numero2, (numero1 * numero2));
+        System.out.printf("%d / %d = %3d(divisão inteira)\n", numero1, numero2, (numero1 / numero2));
+        System.out.printf("%d / %d = %6.2f(dvisão exata)\n", numero1, numero2, ((double)numero1 / numero2));
     }
 }
